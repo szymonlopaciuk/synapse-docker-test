@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  synapse:
+    image: ptman/synapse
+    volumes:
+      - ./data:/data
+    ports:
+      - 8448:8448
+      - 8008:8008
